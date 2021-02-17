@@ -14,4 +14,5 @@
 
     city_in_continent().
 
+## these show some simple relations between regions/cities/countries and continents. 
 Christian M
