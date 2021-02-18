@@ -67,13 +67,16 @@ cities_in_europe() :-
     print(Z).
 
 cities_on_same_contient() :-
-    continent_country(_, Y),
+    continent_country(X, Y),
     country_region(Y, RE),
     region_city(RE, CI),
     print(CI),
     print('
     '),
-    print(Y).
+    print(Y),
+    print('
+    '),
+    print(X).
     
 
 everything_not_inside_germany() :- 
