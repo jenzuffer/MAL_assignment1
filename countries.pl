@@ -104,6 +104,14 @@ regions_in_europe() :-
     country_region(X, Y),
     print(Y).
 
+regions_and_continents() :-
+    continent_country(X, Y),
+    country_region(Y, RE),
+    print(RE),
+    print('
+    '),
+    print(X).
+
 countries_in_europe() :-
     continent_country(europe, X),
     print(X).
